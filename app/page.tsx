@@ -1,6 +1,6 @@
 "use client";
 
-import { Share2, Facebook, Users, GraduationCap, Award, ExternalLink, ArrowLeft, BarChart3, Search, PenLine } from "lucide-react";
+import { Share2, Facebook, Users, GraduationCap, Award, ExternalLink, ArrowLeft, BarChart3, Search, PenLine, MapPin } from "lucide-react";
 import { HelpButton } from "@/components/help/help-button";
 
 const socialDestinations = [
@@ -76,6 +76,16 @@ const seoDestinations = [
     gradient: "from-sky-500 to-blue-600",
     iconBg: "bg-sky-400/20",
     label: "Content & SEO",
+  },
+  {
+    id: "google-business",
+    name: "Google Business Profile",
+    description: "Manage your Google listing — update hours, respond to reviews, add photos, and post updates that show in local search.",
+    url: "https://www.google.com/search?q=Personal+Mastery+Martial+Arts&stick=H4sIAAAAAAAA_-NgU1I1qLAwNzUyM0pONDcwNjK1NDC0MqgwMTBOTDUwMUu0sExMTjRNWsQqG5BaVJyfl5ij4JtYXJJaVAmki0oygXzHopJiAHVCCKdJAAAA&hl=en&mat=Cf0Hjk0vnbSNElYBTVDHnhUwplyWeqsHgo3EUFxkWYq7c6LOtmFurMT1wLGxKiF3xhTrqDDTfym28WqAFu5pArcJTXGgx0zdKqq11ZEwraGMilSprfbuf3evUtJvQHXuSw&authuser=2",
+    icon: MapPin,
+    gradient: "from-red-500 to-rose-600",
+    iconBg: "bg-red-400/20",
+    label: "Local SEO",
   },
 ];
 
@@ -202,7 +212,7 @@ export default function SocialMediaPage() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             {seoDestinations.map((dest) => (
               <DestinationCard key={dest.id} dest={dest} accentColor="emerald" />
             ))}
