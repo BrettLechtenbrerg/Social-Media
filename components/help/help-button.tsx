@@ -71,10 +71,10 @@ export function HelpButton() {
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-violet-600 to-purple-600 flex items-center justify-center">
                 <Share2 className="w-4 h-4 text-white" />
               </div>
-              Social Media Launcher Guide
+              Social Media & SEO Guide
             </DialogTitle>
             <DialogDescription>
-              Your quick-launch pad for posting across all your social platforms.
+              Post to your social platforms and track your SEO performance — all from one place.
             </DialogDescription>
           </DialogHeader>
 
